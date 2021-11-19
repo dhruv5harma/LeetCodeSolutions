@@ -1,0 +1,11 @@
+class Solution {
+    public ListNode middleNode(ListNode head) {
+        ListNode temp = head;
+        ListNode mid = head;
+        while(temp!=null && temp.next!=null){
+            mid=mid.next;
+            temp=temp.next.next;
+        }
+        return mid;
+    }
+}
